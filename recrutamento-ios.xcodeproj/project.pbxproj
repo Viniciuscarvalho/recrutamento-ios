@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C00C4ED46A1CB6DA69EC30 /* Pods_recrutamento_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100DAB555DDB395A28E027BD /* Pods_recrutamento_ios.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EA87F69E1C510583008546DE /* TvSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87F69D1C510583008546DE /* TvSeriesViewController.swift */; };
+		EAFFCACF1C4FEEAE00813ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFCACE1C4FEEAE00813ADE /* AppDelegate.swift */; };
+		EAFFCAD41C4FEEAE00813ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFFCAD21C4FEEAE00813ADE /* Main.storyboard */; };
+		EAFFCAD71C4FEEAF00813ADE /* recrutamento_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAFFCAD51C4FEEAF00813ADE /* recrutamento_ios.xcdatamodeld */; };
+		EAFFCAD91C4FEEAF00813ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFFCAD81C4FEEAF00813ADE /* Assets.xcassets */; };
+		EAFFCADC1C4FEEAF00813ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFFCADA1C4FEEAF00813ADE /* LaunchScreen.storyboard */; };
+		EAFFCAE71C4FEEAF00813ADE /* recrutamento_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFCAE61C4FEEAF00813ADE /* recrutamento_iosTests.swift */; };
+		EAFFCAF21C4FEEB000813ADE /* recrutamento_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFCAF11C4FEEB000813ADE /* recrutamento_iosUITests.swift */; };
+		EAFFCB061C4FFE4300813ADE /* TvSeriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFCB051C4FFE4300813ADE /* TvSeriesViewCell.swift */; };
+		EAFFCB081C5005E400813ADE /* TvSeriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFCB071C5005E400813ADE /* TvSeriesAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAFFCAE31C4FEEAF00813ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFFCAC31C4FEEAD00813ADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFFCACA1C4FEEAE00813ADE;
+			remoteInfo = "recrutamento-ios";
+		};
+		EAFFCAEE1C4FEEB000813ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFFCAC31C4FEEAD00813ADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFFCACA1C4FEEAE00813ADE;
+			remoteInfo = "recrutamento-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		100DAB555DDB395A28E027BD /* Pods_recrutamento_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recrutamento_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		531F0D7C4F8CC8754C13E9D2 /* Pods-recrutamento-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recrutamento-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-recrutamento-ios/Pods-recrutamento-ios.release.xcconfig"; sourceTree = "<group>"; };
+		CFB908E600969EAF1003186C /* Pods-recrutamento-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recrutamento-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-recrutamento-ios/Pods-recrutamento-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		EA87F69D1C510583008546DE /* TvSeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvSeriesViewController.swift; sourceTree = "<group>"; };
+		EAFFCACB1C4FEEAE00813ADE /* recrutamento-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recrutamento-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFFCACE1C4FEEAE00813ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAFFCAD31C4FEEAE00813ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAFFCAD61C4FEEAF00813ADE /* recrutamento_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = recrutamento_ios.xcdatamodel; sourceTree = "<group>"; };
+		EAFFCAD81C4FEEAF00813ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAFFCADB1C4FEEAF00813ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAFFCADD1C4FEEAF00813ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFFCAE21C4FEEAF00813ADE /* recrutamento-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "recrutamento-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFFCAE61C4FEEAF00813ADE /* recrutamento_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recrutamento_iosTests.swift; sourceTree = "<group>"; };
+		EAFFCAE81C4FEEAF00813ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFFCAED1C4FEEB000813ADE /* recrutamento-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "recrutamento-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFFCAF11C4FEEB000813ADE /* recrutamento_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recrutamento_iosUITests.swift; sourceTree = "<group>"; };
+		EAFFCAF31C4FEEB000813ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFFCB051C4FFE4300813ADE /* TvSeriesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvSeriesViewCell.swift; sourceTree = "<group>"; };
+		EAFFCB071C5005E400813ADE /* TvSeriesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvSeriesAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAFFCAC81C4FEEAE00813ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C00C4ED46A1CB6DA69EC30 /* Pods_recrutamento_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFCADF1C4FEEAF00813ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFCAEA1C4FEEAF00813ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58BDFC25541D2071CB58AE64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				100DAB555DDB395A28E027BD /* Pods_recrutamento_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93290593784E4FE166FB7CCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFB908E600969EAF1003186C /* Pods-recrutamento-ios.debug.xcconfig */,
+				531F0D7C4F8CC8754C13E9D2 /* Pods-recrutamento-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAFFCAC21C4FEEAD00813ADE = {
+			isa = PBXGroup;
+			children = (
+				EAFFCACD1C4FEEAE00813ADE /* recrutamento-ios */,
+				EAFFCAE51C4FEEAF00813ADE /* recrutamento-iosTests */,
+				EAFFCAF01C4FEEB000813ADE /* recrutamento-iosUITests */,
+				EAFFCACC1C4FEEAE00813ADE /* Products */,
+				93290593784E4FE166FB7CCD /* Pods */,
+				58BDFC25541D2071CB58AE64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAFFCACC1C4FEEAE00813ADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFFCACB1C4FEEAE00813ADE /* recrutamento-ios.app */,
+				EAFFCAE21C4FEEAF00813ADE /* recrutamento-iosTests.xctest */,
+				EAFFCAED1C4FEEB000813ADE /* recrutamento-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFFCACD1C4FEEAE00813ADE /* recrutamento-ios */ = {
+			isa = PBXGroup;
+			children = (
+				EAFFCACE1C4FEEAE00813ADE /* AppDelegate.swift */,
+				EAFFCB071C5005E400813ADE /* TvSeriesAPI.swift */,
+				EA87F69D1C510583008546DE /* TvSeriesViewController.swift */,
+				EAFFCB051C4FFE4300813ADE /* TvSeriesViewCell.swift */,
+				EAFFCAD21C4FEEAE00813ADE /* Main.storyboard */,
+				EAFFCAD81C4FEEAF00813ADE /* Assets.xcassets */,
+				EAFFCADA1C4FEEAF00813ADE /* LaunchScreen.storyboard */,
+				EAFFCADD1C4FEEAF00813ADE /* Info.plist */,
+				EAFFCAD51C4FEEAF00813ADE /* recrutamento_ios.xcdatamodeld */,
+			);
+			path = "recrutamento-ios";
+			sourceTree = "<group>";
+		};
+		EAFFCAE51C4FEEAF00813ADE /* recrutamento-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFFCAE61C4FEEAF00813ADE /* recrutamento_iosTests.swift */,
+				EAFFCAE81C4FEEAF00813ADE /* Info.plist */,
+			);
+			path = "recrutamento-iosTests";
+			sourceTree = "<group>";
+		};
+		EAFFCAF01C4FEEB000813ADE /* recrutamento-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFFCAF11C4FEEB000813ADE /* recrutamento_iosUITests.swift */,
+				EAFFCAF31C4FEEB000813ADE /* Info.plist */,
+			);
+			path = "recrutamento-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAFFCACA1C4FEEAE00813ADE /* recrutamento-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFFCAF61C4FEEB000813ADE /* Build configuration list for PBXNativeTarget "recrutamento-ios" */;
+			buildPhases = (
+				6F5ABF4BC70B986C94658921 /* Check Pods Manifest.lock */,
+				EAFFCAC71C4FEEAE00813ADE /* Sources */,
+				EAFFCAC81C4FEEAE00813ADE /* Frameworks */,
+				EAFFCAC91C4FEEAE00813ADE /* Resources */,
+				70DF11EE5AD0A401B3FAE066 /* Embed Pods Frameworks */,
+				47C95373B07406D19154A08B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "recrutamento-ios";
+			productName = "recrutamento-ios";
+			productReference = EAFFCACB1C4FEEAE00813ADE /* recrutamento-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAFFCAE11C4FEEAF00813ADE /* recrutamento-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFFCAF91C4FEEB000813ADE /* Build configuration list for PBXNativeTarget "recrutamento-iosTests" */;
+			buildPhases = (
+				EAFFCADE1C4FEEAF00813ADE /* Sources */,
+				EAFFCADF1C4FEEAF00813ADE /* Frameworks */,
+				EAFFCAE01C4FEEAF00813ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFFCAE41C4FEEAF00813ADE /* PBXTargetDependency */,
+			);
+			name = "recrutamento-iosTests";
+			productName = "recrutamento-iosTests";
+			productReference = EAFFCAE21C4FEEAF00813ADE /* recrutamento-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAFFCAEC1C4FEEAF00813ADE /* recrutamento-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFFCAFC1C4FEEB000813ADE /* Build configuration list for PBXNativeTarget "recrutamento-iosUITests" */;
+			buildPhases = (
+				EAFFCAE91C4FEEAF00813ADE /* Sources */,
+				EAFFCAEA1C4FEEAF00813ADE /* Frameworks */,
+				EAFFCAEB1C4FEEAF00813ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFFCAEF1C4FEEB000813ADE /* PBXTargetDependency */,
+			);
+			name = "recrutamento-iosUITests";
+			productName = "recrutamento-iosUITests";
+			productReference = EAFFCAED1C4FEEB000813ADE /* recrutamento-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAFFCAC31C4FEEAD00813ADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Vinicius Carvalho";
+				TargetAttributes = {
+					EAFFCACA1C4FEEAE00813ADE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					EAFFCAE11C4FEEAF00813ADE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EAFFCACA1C4FEEAE00813ADE;
+					};
+					EAFFCAEC1C4FEEAF00813ADE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EAFFCACA1C4FEEAE00813ADE;
+					};
+				};
+			};
+			buildConfigurationList = EAFFCAC61C4FEEAD00813ADE /* Build configuration list for PBXProject "recrutamento-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAFFCAC21C4FEEAD00813ADE;
+			productRefGroup = EAFFCACC1C4FEEAE00813ADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAFFCACA1C4FEEAE00813ADE /* recrutamento-ios */,
+				EAFFCAE11C4FEEAF00813ADE /* recrutamento-iosTests */,
+				EAFFCAEC1C4FEEAF00813ADE /* recrutamento-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAFFCAC91C4FEEAE00813ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFFCADC1C4FEEAF00813ADE /* LaunchScreen.storyboard in Resources */,
+				EAFFCAD91C4FEEAF00813ADE /* Assets.xcassets in Resources */,
+				EAFFCAD41C4FEEAE00813ADE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFCAE01C4FEEAF00813ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFCAEB1C4FEEAF00813ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47C95373B07406D19154A08B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-recrutamento-ios/Pods-recrutamento-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F5ABF4BC70B986C94658921 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70DF11EE5AD0A401B3FAE066 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-recrutamento-ios/Pods-recrutamento-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAFFCAC71C4FEEAE00813ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA87F69E1C510583008546DE /* TvSeriesViewController.swift in Sources */,
+				EAFFCB061C4FFE4300813ADE /* TvSeriesViewCell.swift in Sources */,
+				EAFFCAD71C4FEEAF00813ADE /* recrutamento_ios.xcdatamodeld in Sources */,
+				EAFFCB081C5005E400813ADE /* TvSeriesAPI.swift in Sources */,
+				EAFFCACF1C4FEEAE00813ADE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFCADE1C4FEEAF00813ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFFCAE71C4FEEAF00813ADE /* recrutamento_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFFCAE91C4FEEAF00813ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFFCAF21C4FEEB000813ADE /* recrutamento_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAFFCAE41C4FEEAF00813ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFFCACA1C4FEEAE00813ADE /* recrutamento-ios */;
+			targetProxy = EAFFCAE31C4FEEAF00813ADE /* PBXContainerItemProxy */;
+		};
+		EAFFCAEF1C4FEEB000813ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFFCACA1C4FEEAE00813ADE /* recrutamento-ios */;
+			targetProxy = EAFFCAEE1C4FEEB000813ADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAFFCAD21C4FEEAE00813ADE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFFCAD31C4FEEAE00813ADE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAFFCADA1C4FEEAF00813ADE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFFCADB1C4FEEAF00813ADE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAFFCAF41C4FEEB000813ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAFFCAF51C4FEEB000813ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAFFCAF71C4FEEB000813ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB908E600969EAF1003186C /* Pods-recrutamento-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "recrutamento-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.projetos.recrutamento-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAFFCAF81C4FEEB000813ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531F0D7C4F8CC8754C13E9D2 /* Pods-recrutamento-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "recrutamento-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.projetos.recrutamento-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EAFFCAFA1C4FEEB000813ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "recrutamento-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.projetos.recrutamento-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recrutamento-ios.app/recrutamento-ios";
+			};
+			name = Debug;
+		};
+		EAFFCAFB1C4FEEB000813ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "recrutamento-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.projetos.recrutamento-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recrutamento-ios.app/recrutamento-ios";
+			};
+			name = Release;
+		};
+		EAFFCAFD1C4FEEB000813ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "recrutamento-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.projetos.recrutamento-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "recrutamento-ios";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EAFFCAFE1C4FEEB000813ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "recrutamento-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.projetos.recrutamento-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "recrutamento-ios";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAFFCAC61C4FEEAD00813ADE /* Build configuration list for PBXProject "recrutamento-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFCAF41C4FEEB000813ADE /* Debug */,
+				EAFFCAF51C4FEEB000813ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFFCAF61C4FEEB000813ADE /* Build configuration list for PBXNativeTarget "recrutamento-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFCAF71C4FEEB000813ADE /* Debug */,
+				EAFFCAF81C4FEEB000813ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFFCAF91C4FEEB000813ADE /* Build configuration list for PBXNativeTarget "recrutamento-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFCAFA1C4FEEB000813ADE /* Debug */,
+				EAFFCAFB1C4FEEB000813ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFFCAFC1C4FEEB000813ADE /* Build configuration list for PBXNativeTarget "recrutamento-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFFCAFD1C4FEEB000813ADE /* Debug */,
+				EAFFCAFE1C4FEEB000813ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAFFCAD51C4FEEAF00813ADE /* recrutamento_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAFFCAD61C4FEEAF00813ADE /* recrutamento_ios.xcdatamodel */,
+			);
+			currentVersion = EAFFCAD61C4FEEAF00813ADE /* recrutamento_ios.xcdatamodel */;
+			path = recrutamento_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EAFFCAC31C4FEEAD00813ADE /* Project object */;
+}
