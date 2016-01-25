@@ -109,7 +109,7 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
         
         let show: NSDictionary = shows[indexPath.row] as! NSDictionary
         
-        cell.title.text = show["show"]!["title"] as? string
+        cell.title.text = show["show"]!["title"] as? String
         
         let showImages: NSDictionary = show["show"]!["images"] as! NSDictionary
         

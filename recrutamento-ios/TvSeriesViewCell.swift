@@ -17,8 +17,8 @@ class TvSeriesViewCell: UICollectionViewCell {
     
     func useThumbImage(imageURL: NSString) {
         
-        showThumb.af_setImageWithUrl (NSURL(string: imageURL as String)!,
-            placeholderImage:UIImage(named: "imageLoad"))
+//        showThumb.af_setImageWithUrl (NSURL(string: imageURL as String)!,
+//            placeholderImage:UIImage(named: "imageLoad"))
     }
     
 }
