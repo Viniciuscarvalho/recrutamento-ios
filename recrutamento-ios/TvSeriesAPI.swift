@@ -66,10 +66,10 @@ class TvSeriesAPI: NSObject {
         
         Alamofire.request(.GET, url, headers: headers)
             .responseJSON { (response) -> Void in
-                switch response {
-                case .Sucess:
+                switch response.result {
+                case .Success:
                     result(shows: response.result as! NSArray)
-                case .Failure(_, let error):
+                case .Failure(let error):
                     errorResult(error: error)
                 }
         }
