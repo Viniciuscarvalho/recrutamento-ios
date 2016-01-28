@@ -20,13 +20,13 @@ class TvSeriesAPI: NSObject {
         let reachability : Reachability
         do {
             reachability = try Reachability.reachabilityForInternetConnection()
+            
         } catch {
             print("Unable to create Reachability")
             return
         }
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachability", name: ReachabilityChangedNotification, object: reachability)
-        
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachability", name: ReachabilityChangedNotification, object: reachability)
+//        
         do {
           try reachability.startNotifier()
         } catch {

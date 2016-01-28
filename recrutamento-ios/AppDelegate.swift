@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import ReachabilitySwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let reachability : Reachability
+        do {
+            reachability = try Reachability.reachabilityForInternetConnection()
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachability", name: ReachabilityChangedNotification, object: reachability)
+            
+        } catch {
+            print("Unable to create Reachability")
+        }
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachability", name: ReachabilityChangedNotification, object: reachability)
+        
+//        do {
+//            try reachability.startNotifier()
+//        } catch {
+//            print("Unable to start notifier")
+//        }
+//        
+//        
+//        func reachabilityChanged(note: NSNotification) {
+//            
+//            let reachability = note.object as! Reachability
+//            
+//            if reachability.isReachable() {
+//                if reachability.isReachableViaWiFi() {
+//                    print("Reachable via WiFi")
+//                    
+//                } else {
+//                    print("Reachable via Celular")
+//                }
+//            } else {
+//                print("Not reachable")
+//            }
+//        }
+
         return true
     }
 
