@@ -5,7 +5,7 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    lazy var refreshControl:UIRefreshControl = {
+    lazy var refreshControl: UIRefreshControl = {
         
         let refreshControl = UIRefreshControl()
         
@@ -109,12 +109,5 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
         
         return CGSizeMake(150, 200)
     }
-    
-    
-    
-    
-    
-    
-
 
 }
