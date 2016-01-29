@@ -1,17 +1,9 @@
-//
-//  TvSeriesViewController.swift
-//  recrutamento-ios
-//
-//  Created by Vinicius Carvalho on 21/01/16.
-//  Copyright © 2016 Vinicius Carvalho. All rights reserved.
-//
 
 import UIKit
 
 class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet var loadingView: UIView!
     
     lazy var refreshControl:UIRefreshControl = {
         
@@ -24,7 +16,7 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
     
     var shows: NSArray = []
     
-    let traktAPI: TvSeriesAPI = TvSeriesAPI()
+    let traktAPI = TvSeriesAPI()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +35,6 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
                 self.refreshControl.endRefreshing()
             }
             
-            self.loadingView.hidden = true
-            
             self.shows = shows
             self.collectionView.reloadData()
             
@@ -53,11 +43,9 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
                 if self.refreshControl.refreshing {
                     self.refreshControl.endRefreshing()
                 }
-                
-                self.loadingView.hidden = true
+        }
     }
     
-}
     // MARK: Verify connection
     
     func networkUnreachable() {
@@ -93,7 +81,6 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
         return shows.count
         
     }
-    
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         

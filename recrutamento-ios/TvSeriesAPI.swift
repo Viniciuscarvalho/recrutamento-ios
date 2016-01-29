@@ -1,10 +1,3 @@
-//
-//  TvSeries.swift
-//  recrutamento-ios
-//
-//  Created by Vinicius Carvalho on 20/01/16.
-//  Copyright © 2016 Vinicius Carvalho. All rights reserved.
-//
 
 import Foundation
 import Alamofire
@@ -12,9 +5,11 @@ import ReachabilitySwift
 
 class TvSeriesAPI: NSObject {
     
-    let API_KEY: String = "d9e899ee7e1d255d852ae8449e57a1279e37e94d579beee69c6f5980687afa57"
+    let API_KEY = "d9e899ee7e1d255d852ae8449e57a1279e37e94d579beee69c6f5980687afa57"
+    let URL = "https://api-v2launch.trakt.tv/shows/trending?extended=images&limite=page10&page="
+    let VERSION_API = "2"
     
-    var currentPage : Int = 1
+    var currentPage = 1
     
     override init() {
         let reachability : Reachability
@@ -25,32 +20,29 @@ class TvSeriesAPI: NSObject {
             print("Unable to create Reachability")
             return
         }
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachability", name: ReachabilityChangedNotification, object: reachability)
-//        
+        
         do {
           try reachability.startNotifier()
         } catch {
             print("Unable to start notifier")
         }
         
-        
         func reachabilityChanged(note: NSNotification) {
             
-        let reachability = note.object as! Reachability
-        
-        if reachability.isReachable() {
-            if reachability.isReachableViaWiFi() {
-                print("Reachable via WiFi")
-                
+            let reachability = note.object as! Reachability
+            
+            if reachability.isReachable() {
+                if reachability.isReachableViaWiFi() {
+                    print("Reachable via WiFi")
+                    
+                } else {
+                    print("Reachable via Celular")
+                }
             } else {
-                print("Reachable via Celular")
+                print("Not reachable")
             }
-        } else {
-            print("Not reachable")
-        }
         }
     }
-
 
     func nextPagination() {
         self.currentPage++
@@ -58,9 +50,9 @@ class TvSeriesAPI: NSObject {
 
     func loadPopularShows(result: (shows: NSArray) -> Void, errorResult: (error: ErrorType) -> Void) {
         
-        let url = "https://api-v2launch.trakt.tv/shows/trending?extended=images&limite=page10&page=\(currentPage)"
+        let url = "\(URL)\(currentPage)"
         let headers = [
-                "trakt-api-version": "2",
+                "trakt-api-version": VERSION_API,
                 "trakt-api-key": self.API_KEY
         ]
         
@@ -68,12 +60,11 @@ class TvSeriesAPI: NSObject {
             .responseJSON { (response) -> Void in
                 switch response.result {
                 case .Success:
-                    result(shows: response.result as! NSArray)
+                    result(shows: response.result.value as! NSArray)
                 case .Failure(let error):
                     errorResult(error: error)
                 }
         }
-
     }
 }
 
