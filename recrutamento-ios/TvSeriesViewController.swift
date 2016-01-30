@@ -25,6 +25,10 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
         
         self.collectionView.addSubview(self.refreshControl)
         
+        self.collectionView.dataSource = self
+        
+        self.collectionView.delegate = self
+        
         self.loadShows()
     }
     

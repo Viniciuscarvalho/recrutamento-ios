@@ -6,7 +6,7 @@ import ReachabilitySwift
 class TvSeriesAPI: NSObject {
     
     let API_KEY = "d9e899ee7e1d255d852ae8449e57a1279e37e94d579beee69c6f5980687afa57"
-    let URL = "https://api-v2launch.trakt.tv/shows/trending?extended=images&limite=page10&page="
+    let URL = "https://api-v2launch.trakt.tv/shows/trending?extended=images&limite=page20&page="
     let VERSION_API = "2"
     
     var currentPage = 1
