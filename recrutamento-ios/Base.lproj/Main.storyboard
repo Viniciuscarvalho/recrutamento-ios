@@ -59,10 +59,10 @@
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJV-7o-VOj">
                                                     <rect key="frame" x="0.0" y="-8" width="150" height="217"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2F462DF1-FAE6-40DA-B4AF-5765F3EA34D7" translatesAutoresizingMaskIntoConstraints="NO" id="XdI-uA-e0Y">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="93E38ED0-5AE4-4DB0-BDFC-FF6B0CAA9E85" translatesAutoresizingMaskIntoConstraints="NO" id="XdI-uA-e0Y">
                                                             <rect key="frame" x="0.0" y="8" width="150" height="150"/>
-                                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                                <rect key="frame" x="-8" y="8" width="150" height="150"/>
+                                                            <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                                                <rect key="frame" x="0.0" y="8" width="142" height="145"/>
                                                             </variation>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lA3-9E-bUO">
@@ -72,6 +72,9 @@
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular" fixedFrame="YES">
                                                                 <rect key="frame" x="0.0" y="166" width="134" height="21"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                                <rect key="frame" x="0.0" y="174" width="142" height="21"/>
                                                             </variation>
                                                         </label>
                                                     </subviews>
@@ -92,6 +95,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="64" width="600" height="714"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="800" height="736"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="lNg-17-sQl" id="oCm-4E-wce"/>
                                     <outlet property="delegate" destination="lNg-17-sQl" id="a1A-ne-N3U"/>
@@ -107,11 +113,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYW-uX-KXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="240"/>
+            <point key="canvasLocation" x="-20.25" y="240"/>
         </scene>
     </scenes>
     <resources>
-        <image name="2F462DF1-FAE6-40DA-B4AF-5765F3EA34D7" width="91" height="138">
+        <image name="93E38ED0-5AE4-4DB0-BDFC-FF6B0CAA9E85" width="91" height="138">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
