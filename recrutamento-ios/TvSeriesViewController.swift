@@ -111,7 +111,7 @@ class TvSeriesViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        return CGSizeMake(150, 200)
+        return CGSizeMake(150, 250)
     }
 
 }
