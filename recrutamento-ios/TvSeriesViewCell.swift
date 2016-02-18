@@ -5,7 +5,6 @@ import AlamofireImage
 class TvSeriesViewCell: UICollectionViewCell {
     
     @IBOutlet weak var title: UILabel!
-    
     @IBOutlet weak var imageTvSeries: UIImageView!
     
     func useThumbImage(imageURL: NSString) {

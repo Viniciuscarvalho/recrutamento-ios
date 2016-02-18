@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		06C00C4ED46A1CB6DA69EC30 /* Pods_recrutamento_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100DAB555DDB395A28E027BD /* Pods_recrutamento_ios.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		EA1DAA051C5D4803006F102D /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1DAA041C5D4803006F102D /* RoundedCornersView.swift */; };
 		EA87F69E1C510583008546DE /* TvSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87F69D1C510583008546DE /* TvSeriesViewController.swift */; };
 		EAFFCACF1C4FEEAE00813ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFCACE1C4FEEAE00813ADE /* AppDelegate.swift */; };
 		EAFFCAD41C4FEEAE00813ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFFCAD21C4FEEAE00813ADE /* Main.storyboard */; };
@@ -42,7 +41,6 @@
 		100DAB555DDB395A28E027BD /* Pods_recrutamento_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recrutamento_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531F0D7C4F8CC8754C13E9D2 /* Pods-recrutamento-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recrutamento-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-recrutamento-ios/Pods-recrutamento-ios.release.xcconfig"; sourceTree = "<group>"; };
 		CFB908E600969EAF1003186C /* Pods-recrutamento-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recrutamento-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-recrutamento-ios/Pods-recrutamento-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		EA1DAA041C5D4803006F102D /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		EA87F69D1C510583008546DE /* TvSeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvSeriesViewController.swift; sourceTree = "<group>"; };
 		EAFFCACB1C4FEEAE00813ADE /* recrutamento-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recrutamento-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFFCACE1C4FEEAE00813ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				EAFFCB051C4FFE4300813ADE /* TvSeriesViewCell.swift */,
-				EA1DAA041C5D4803006F102D /* RoundedCornersView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -404,7 +401,6 @@
 				EAFFCAD71C4FEEAF00813ADE /* recrutamento_ios.xcdatamodeld in Sources */,
 				EAFFCB081C5005E400813ADE /* TvSeriesAPI.swift in Sources */,
 				EAFFCACF1C4FEEAE00813ADE /* AppDelegate.swift in Sources */,
-				EA1DAA051C5D4803006F102D /* RoundedCornersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
